@@ -1,2 +1,7 @@
 
-console.log("Application Dr MOUFAKKIR chargée !");
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = (section.id === sectionId) ? 'block' : 'none';
+    });
+}

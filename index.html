@@ -11,16 +11,20 @@
         <h1>Dr MOUFAKKIR</h1>
         <nav>
             <ul>
-                <li>Patients</li>
-                <li>Agenda</li>
-                <li>Bloc opératoire</li>
-                <li>Honoraires</li>
-                <li>Documents</li>
+                <li onclick="showSection('patients')">Patients</li>
+                <li onclick="showSection('agenda')">Agenda</li>
+                <li onclick="showSection('bloc')">Bloc opératoire</li>
+                <li onclick="showSection('honoraires')">Honoraires</li>
+                <li onclick="showSection('documents')">Documents</li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>Bienvenue dans votre application de gestion de cabinet.</p>
+        <section id="patients" class="content-section">[Module patients ici]</section>
+        <section id="agenda" class="content-section" style="display:none;">[Agenda ici]</section>
+        <section id="bloc" class="content-section" style="display:none;">[Bloc opératoire ici]</section>
+        <section id="honoraires" class="content-section" style="display:none;">[Honoraires ici]</section>
+        <section id="documents" class="content-section" style="display:none;">[Documents ici]</section>
     </main>
     <script src="app.js"></script>
 </body>
