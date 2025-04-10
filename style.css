@@ -27,3 +27,24 @@ main {
 .content-section {
     margin-top: 20px;
 }
+input, button {
+    margin: 5px 0;
+    padding: 8px;
+    width: 90%;
+}
+button {
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #00d1b2;
+    padding: 10px;
+    text-align: left;
+}

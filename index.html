@@ -20,11 +20,48 @@
         </nav>
     </header>
     <main>
-        <section id="patients" class="content-section">[Module patients ici]</section>
-        <section id="agenda" class="content-section" style="display:none;">[Agenda ici]</section>
-        <section id="bloc" class="content-section" style="display:none;">[Bloc opératoire ici]</section>
-        <section id="honoraires" class="content-section" style="display:none;">[Honoraires ici]</section>
-        <section id="documents" class="content-section" style="display:none;">[Documents ici]</section>
+        <section id="patients" class="content-section">
+            <h2>Patients</h2>
+            <form>
+                <input type="text" placeholder="Nom du patient"><br>
+                <input type="date" placeholder="Date de naissance"><br>
+                <button type="button">Ajouter</button>
+            </form>
+            <ul>
+                <li>Ahmed L. - 01/01/1980</li>
+                <li>Fatima Z. - 12/03/1975</li>
+            </ul>
+        </section>
+        <section id="agenda" class="content-section" style="display:none;">
+            <h2>Agenda</h2>
+            <ul>
+                <li>09:00 - Consultation : Ahmed L.</li>
+                <li>11:00 - Contrôle post-op : Fatima Z.</li>
+            </ul>
+        </section>
+        <section id="bloc" class="content-section" style="display:none;">
+            <h2>Bloc opératoire</h2>
+            <table border="1">
+                <tr><th>Patient</th><th>Acte</th><th>Note</th></tr>
+                <tr><td>Ahmed L.</td><td>Cholécystectomie</td><td>RAS</td></tr>
+            </table>
+        </section>
+        <section id="honoraires" class="content-section" style="display:none;">
+            <h2>Honoraires</h2>
+            <form>
+                <input type="text" placeholder="Acte"><br>
+                <input type="number" placeholder="Montant (MAD)"><br>
+                <button type="button">Enregistrer</button>
+            </form>
+            <ul>
+                <li>Consultation - 300 MAD</li>
+                <li>Intervention - 2500 MAD</li>
+            </ul>
+        </section>
+        <section id="documents" class="content-section" style="display:none;">
+            <h2>Documents</h2>
+            <button onclick="alert('Certificat généré (simulation)')">Générer un certificat médical</button>
+        </section>
     </main>
     <script src="app.js"></script>
 </body>
